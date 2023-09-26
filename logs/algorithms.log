@@ -1,0 +1,145 @@
+2019-03-25 11:01:11,298 - INFO - 19498 - textcleaner.py - <module> - 37 - 'pattern' package not found; tag filters are not available for English
+2019-03-25 11:01:11,528 - INFO - 19498 - algorithms.py - interaction - 20 - task_id:99e6eb21-3baa-4a51-9534-c9c81b670727
+2019-03-25 11:01:11,595 - INFO - 19498 - algorithms.py - multi - 29 - task_id:99e6eb21-3baa-4a51-9534-c9c81b670727
+2019-03-25 11:01:11,598 - INFO - 19498 - algorithms.py - jabber_detector - 12 - task_id:99e6eb21-3baa-4a51-9534-c9c81b670727
+2019-03-25 11:01:11,598 - INFO - 19498 - jabber.py - get_course_jabberTS_ms - 137 - Parser teacher and student json success! Start get jabber
+2019-03-25 11:01:11,598 - INFO - 19498 - jabber.py - process_input_date - 44 - Start parser student_text and teacher_text json data
+2019-03-25 11:01:11,668 - ERROR - 19498 - jsonStrParserTool.py - jsonParserMerge - 115 - Error parser jsonStr,detail is 
+Traceback (most recent call last):
+  File "/home/x/anaconda3/envs/py3/lib/python3.6/site-packages/pandas/core/indexes/base.py", line 3078, in get_loc
+    return self._engine.get_loc(key)
+  File "pandas/_libs/index.pyx", line 140, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 162, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1492, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1500, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'status_code'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/x/Desktop/workplace/godeye_server_algorithms/src/tools/jsonStrParserTool.py", line 93, in jsonParserMerge
+    df['status_code'] = df['status_code'].apply(lambda x: int(x))
+  File "/home/x/anaconda3/envs/py3/lib/python3.6/site-packages/pandas/core/frame.py", line 2688, in __getitem__
+    return self._getitem_column(key)
+  File "/home/x/anaconda3/envs/py3/lib/python3.6/site-packages/pandas/core/frame.py", line 2695, in _getitem_column
+    return self._get_item_cache(key)
+  File "/home/x/anaconda3/envs/py3/lib/python3.6/site-packages/pandas/core/generic.py", line 2489, in _get_item_cache
+    values = self._data.get(item)
+  File "/home/x/anaconda3/envs/py3/lib/python3.6/site-packages/pandas/core/internals.py", line 4115, in get
+    loc = self.items.get_loc(item)
+  File "/home/x/anaconda3/envs/py3/lib/python3.6/site-packages/pandas/core/indexes/base.py", line 3080, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/_libs/index.pyx", line 140, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 162, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1492, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1500, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'status_code'
+
+2019-03-25 11:37:19,274 - INFO - 22835 - course_evaluation.py - evaluation - 14 - task_id:0cfc0a7a-343d-474f-a6fc-45f9f65dff3f
+2019-03-25 11:37:19,274 - INFO - 22835 - classEvalution.py - get_class_evaluation - 25 - task_id: 0cfc0a7a-343d-474f-a6fc-45f9f65dff3f,start class evaluation
+2019-03-25 11:37:19,274 - INFO - 22835 - classEvalution.py - get_class_evaluation - 27 - task_id: 0cfc0a7a-343d-474f-a6fc-45f9f65dff3f
+2019-03-25 11:37:19,274 - INFO - 22835 - columbusJson.py - columbusJsonSDK - 23 - start columbusJson SDK work...
+2019-03-25 11:37:19,532 - INFO - 22835 - columbusJson.py - columbusJsonSDK - 62 - columbusSDK work succeed!
+2019-03-25 11:37:19,552 - INFO - 22835 - columbusJson.py - columbusJsonSDK - 23 - start columbusJson SDK work...
+2019-03-25 11:37:19,795 - INFO - 22835 - columbusJson.py - columbusJsonSDK - 62 - columbusSDK work succeed!
+2019-03-25 11:37:19,823 - INFO - 22835 - classEvalution.py - get_class_evaluation - 59 - task_id: 0cfc0a7a-343d-474f-a6fc-45f9f65dff3f,studentFeature shape is (1, 1140),teacherFeature shape is (1, 1565)
+2019-03-25 11:37:19,862 - INFO - 22835 - classEvalution.py - get_class_evaluation - 84 - task_id: 0cfc0a7a-343d-474f-a6fc-45f9f65dff3f - class prediction succeed, time cost is 588 ms!
+2019-03-25 11:49:33,806 - INFO - 23884 - course_evaluation.py - evaluation - 14 - task_id:66b166f5-e6fb-450c-ae84-c3e6fad31677
+2019-03-25 11:49:33,806 - INFO - 23884 - classEvalution.py - get_class_evaluation - 25 - task_id: 66b166f5-e6fb-450c-ae84-c3e6fad31677,start class evaluation
+2019-03-25 11:49:33,806 - INFO - 23884 - classEvalution.py - get_class_evaluation - 27 - task_id: 66b166f5-e6fb-450c-ae84-c3e6fad31677
+2019-03-25 11:49:33,806 - INFO - 23884 - columbusJson.py - columbusJsonSDK - 23 - start columbusJson SDK work...
+2019-03-25 11:49:33,993 - INFO - 23884 - columbusJson.py - columbusJsonSDK - 62 - columbusSDK work succeed!
+2019-03-25 11:49:34,014 - INFO - 23884 - columbusJson.py - columbusJsonSDK - 23 - start columbusJson SDK work...
+2019-03-25 11:49:34,257 - INFO - 23884 - columbusJson.py - columbusJsonSDK - 62 - columbusSDK work succeed!
+2019-03-25 11:49:34,284 - INFO - 23884 - classEvalution.py - get_class_evaluation - 59 - task_id: 66b166f5-e6fb-450c-ae84-c3e6fad31677,studentFeature shape is (1, 1140),teacherFeature shape is (1, 1565)
+2019-03-25 11:49:34,308 - INFO - 23884 - classEvalution.py - get_class_evaluation - 84 - task_id: 66b166f5-e6fb-450c-ae84-c3e6fad31677 - class prediction succeed, time cost is 501 ms!
+2023-05-11 10:23:12,307 - INFO - 25476 - course_evaluation.py - evaluation - 32 - Start - task_id:
+2023-05-11 10:23:12,307 - INFO - 25476 - classEvalution.py - get_class_evaluation - 26 - task_id: ,start class evaluation
+2023-05-11 10:23:12,307 - INFO - 25476 - classEvalution.py - get_class_evaluation - 28 - task_id: 
+2023-05-11 10:23:12,307 - INFO - 25476 - columbusJson.py - columbusJsonSDK - 23 - start columbusJson SDK work...
+2023-05-11 10:23:13,954 - INFO - 25476 - columbusJson.py - columbusJsonSDK - 62 - columbusSDK work succeed!
+2023-05-11 10:23:13,964 - INFO - 25476 - columbusJson.py - columbusJsonSDK - 23 - start columbusJson SDK work...
+2023-05-11 10:23:14,012 - INFO - 25476 - columbusJson.py - columbusJsonSDK - 62 - columbusSDK work succeed!
+2023-05-11 10:23:14,025 - INFO - 25476 - classEvalution.py - get_class_evaluation - 59 - task_id: ,studentFeature shape is (1, 1140),teacherFeature shape is (1, 1565)
+2023-05-11 10:23:14,027 - ERROR - 25476 - classEvalution.py - get_class_evaluation - 78 - task_id:  - Model prediction error, time cost is 1719 ms, detail is Traceback (most recent call last):
+  File "/home/guoweiye/workspace/course_evaluation/src/tools/classEvalution.py", line 64, in get_class_evaluation
+    features = class_evaluate_model['feature']
+TypeError: 'int' object is not subscriptable
+
+2023-05-11 10:23:14,027 - INFO - 25476 - course_evaluation.py - evaluation - 41 - Finish - task_id:,error_code:-5,error_message:Model prediction error
+2023-05-11 10:24:32,441 - INFO - 25627 - course_evaluation.py - evaluation - 32 - Start - task_id:
+2023-05-11 10:24:32,441 - INFO - 25627 - classEvalution.py - get_class_evaluation - 26 - task_id: ,start class evaluation
+2023-05-11 10:24:32,441 - INFO - 25627 - classEvalution.py - get_class_evaluation - 28 - task_id: 
+2023-05-11 10:24:32,441 - INFO - 25627 - columbusJson.py - columbusJsonSDK - 23 - start columbusJson SDK work...
+2023-05-11 10:24:32,893 - INFO - 25627 - columbusJson.py - columbusJsonSDK - 62 - columbusSDK work succeed!
+2023-05-11 10:24:32,903 - INFO - 25627 - columbusJson.py - columbusJsonSDK - 23 - start columbusJson SDK work...
+2023-05-11 10:24:32,952 - INFO - 25627 - columbusJson.py - columbusJsonSDK - 62 - columbusSDK work succeed!
+2023-05-11 10:24:32,964 - INFO - 25627 - classEvalution.py - get_class_evaluation - 59 - task_id: ,studentFeature shape is (1, 1140),teacherFeature shape is (1, 1565)
+2023-05-11 10:24:32,966 - ERROR - 25627 - classEvalution.py - get_class_evaluation - 78 - task_id:  - Model prediction error, time cost is 524 ms, detail is Traceback (most recent call last):
+  File "/home/guoweiye/workspace/course_evaluation/src/tools/classEvalution.py", line 64, in get_class_evaluation
+    features = class_evaluate_model['feature']
+TypeError: 'int' object is not subscriptable
+
+2023-05-11 10:24:32,966 - INFO - 25627 - course_evaluation.py - evaluation - 41 - Finish - task_id:,error_code:-5,error_message:Model prediction error
+2023-05-11 10:40:07,672 - INFO - 26598 - course_evaluation.py - evaluation - 33 - Start - task_id:
+2023-05-11 10:40:07,672 - INFO - 26598 - classEvalution.py - get_class_evaluation - 27 - task_id: ,start class evaluation
+2023-05-11 10:40:07,672 - INFO - 26598 - classEvalution.py - get_class_evaluation - 29 - task_id: 
+2023-05-11 10:40:07,672 - INFO - 26598 - columbusJson.py - columbusJsonSDK - 23 - start columbusJson SDK work...
+2023-05-11 10:40:08,164 - INFO - 26598 - columbusJson.py - columbusJsonSDK - 62 - columbusSDK work succeed!
+2023-05-11 10:40:08,174 - INFO - 26598 - columbusJson.py - columbusJsonSDK - 23 - start columbusJson SDK work...
+2023-05-11 10:40:08,225 - INFO - 26598 - columbusJson.py - columbusJsonSDK - 62 - columbusSDK work succeed!
+2023-05-11 10:40:08,238 - INFO - 26598 - classEvalution.py - get_class_evaluation - 60 - task_id: ,studentFeature shape is (1, 1140),teacherFeature shape is (1, 1565)
+2023-05-11 10:40:08,241 - ERROR - 26598 - classEvalution.py - get_class_evaluation - 79 - task_id:  - Model prediction error, time cost is 568 ms, detail is Traceback (most recent call last):
+  File "/home/guoweiye/workspace/course_evaluation/src/tools/classEvalution.py", line 65, in get_class_evaluation
+    features = class_evaluate_model['feature']
+TypeError: 'int' object is not subscriptable
+
+2023-05-11 10:40:08,241 - INFO - 26598 - course_evaluation.py - evaluation - 42 - Finish - task_id:,error_code:-5,error_message:Model prediction error
+2023-05-11 10:42:00,488 - INFO - 26732 - course_evaluation.py - evaluation - 33 - Start - task_id:
+2023-05-11 10:42:00,488 - INFO - 26732 - classEvalution.py - get_class_evaluation - 27 - task_id: ,start class evaluation
+2023-05-11 10:42:00,488 - INFO - 26732 - classEvalution.py - get_class_evaluation - 29 - task_id: 
+2023-05-11 10:42:00,488 - INFO - 26732 - columbusJson.py - columbusJsonSDK - 23 - start columbusJson SDK work...
+2023-05-11 10:42:00,938 - INFO - 26732 - columbusJson.py - columbusJsonSDK - 62 - columbusSDK work succeed!
+2023-05-11 10:42:00,948 - INFO - 26732 - columbusJson.py - columbusJsonSDK - 23 - start columbusJson SDK work...
+2023-05-11 10:42:00,995 - INFO - 26732 - columbusJson.py - columbusJsonSDK - 62 - columbusSDK work succeed!
+2023-05-11 10:42:01,007 - INFO - 26732 - classEvalution.py - get_class_evaluation - 60 - task_id: ,studentFeature shape is (1, 1140),teacherFeature shape is (1, 1565)
+2023-05-11 10:42:01,009 - ERROR - 26732 - classEvalution.py - get_class_evaluation - 79 - task_id:  - Model prediction error, time cost is 520 ms, detail is Traceback (most recent call last):
+  File "/home/guoweiye/workspace/course_evaluation/src/tools/classEvalution.py", line 65, in get_class_evaluation
+    features = class_evaluate_model['feature']
+TypeError: 'int' object is not subscriptable
+
+2023-05-11 10:42:01,009 - INFO - 26732 - course_evaluation.py - evaluation - 42 - Finish - task_id:,error_code:-5,error_message:Model prediction error
+2023-05-11 10:44:53,347 - INFO - 26907 - course_evaluation.py - evaluation - 35 - Start - task_id:
+2023-05-11 10:44:53,347 - INFO - 26907 - classEvalution.py - get_class_evaluation - 27 - task_id: ,start class evaluation
+2023-05-11 10:44:53,347 - INFO - 26907 - classEvalution.py - get_class_evaluation - 29 - task_id: 
+2023-05-11 10:44:53,347 - INFO - 26907 - columbusJson.py - columbusJsonSDK - 23 - start columbusJson SDK work...
+2023-05-11 10:44:53,799 - INFO - 26907 - columbusJson.py - columbusJsonSDK - 62 - columbusSDK work succeed!
+2023-05-11 10:44:53,809 - INFO - 26907 - columbusJson.py - columbusJsonSDK - 23 - start columbusJson SDK work...
+2023-05-11 10:44:53,857 - INFO - 26907 - columbusJson.py - columbusJsonSDK - 62 - columbusSDK work succeed!
+2023-05-11 10:44:53,869 - INFO - 26907 - classEvalution.py - get_class_evaluation - 60 - task_id: ,studentFeature shape is (1, 1140),teacherFeature shape is (1, 1565)
+2023-05-11 10:44:53,871 - ERROR - 26907 - classEvalution.py - get_class_evaluation - 79 - task_id:  - Model prediction error, time cost is 524 ms, detail is Traceback (most recent call last):
+  File "/home/guoweiye/workspace/course_evaluation/src/tools/classEvalution.py", line 65, in get_class_evaluation
+    features = class_evaluate_model['feature']
+TypeError: 'int' object is not subscriptable
+
+2023-05-11 10:44:53,871 - INFO - 26907 - course_evaluation.py - evaluation - 44 - Finish - task_id:,error_code:-5,error_message:Model prediction error
+2023-05-11 11:30:35,778 - INFO - 2051 - course_evaluation.py - evaluation - 32 - Start - task_id:
+2023-05-11 11:30:35,778 - INFO - 2051 - classEvalution.py - get_class_evaluation - 26 - task_id: ,start class evaluation
+2023-05-11 11:30:35,778 - INFO - 2051 - classEvalution.py - get_class_evaluation - 28 - task_id: 
+2023-05-11 11:30:35,778 - INFO - 2051 - columbusJson.py - columbusJsonSDK - 23 - start columbusJson SDK work...
+2023-05-11 11:30:36,238 - INFO - 2051 - columbusJson.py - columbusJsonSDK - 62 - columbusSDK work succeed!
+2023-05-11 11:30:36,275 - INFO - 2051 - columbusJson.py - columbusJsonSDK - 23 - start columbusJson SDK work...
+2023-05-11 11:30:36,336 - INFO - 2051 - columbusJson.py - columbusJsonSDK - 62 - columbusSDK work succeed!
+2023-05-11 11:30:36,388 - INFO - 2051 - classEvalution.py - get_class_evaluation - 60 - task_id: ,studentFeature shape is (1, 1140),teacherFeature shape is (1, 1565)
+2023-05-11 11:30:36,433 - INFO - 2051 - classEvalution.py - get_class_evaluation - 85 - task_id:  - class prediction succeed, time cost is 655 ms!
+2023-05-11 11:30:36,433 - INFO - 2051 - course_evaluation.py - evaluation - 41 - Finish - task_id:,error_code:0,error_message:success
+2023-05-11 11:32:04,073 - INFO - 2145 - course_evaluation.py - evaluation - 32 - Start - task_id:
+2023-05-11 11:32:04,073 - INFO - 2145 - classEvalution.py - get_class_evaluation - 26 - task_id: ,start class evaluation
+2023-05-11 11:32:04,073 - INFO - 2145 - classEvalution.py - get_class_evaluation - 28 - task_id: 
+2023-05-11 11:32:04,073 - INFO - 2145 - columbusJson.py - columbusJsonSDK - 23 - start columbusJson SDK work...
+2023-05-11 11:32:04,539 - INFO - 2145 - columbusJson.py - columbusJsonSDK - 62 - columbusSDK work succeed!
+2023-05-11 11:32:04,574 - INFO - 2145 - columbusJson.py - columbusJsonSDK - 23 - start columbusJson SDK work...
+2023-05-11 11:32:04,635 - INFO - 2145 - columbusJson.py - columbusJsonSDK - 62 - columbusSDK work succeed!
+2023-05-11 11:32:04,686 - INFO - 2145 - classEvalution.py - get_class_evaluation - 60 - task_id: ,studentFeature shape is (1, 1140),teacherFeature shape is (1, 1565)
+2023-05-11 11:32:04,730 - INFO - 2145 - classEvalution.py - get_class_evaluation - 85 - task_id:  - class prediction succeed, time cost is 656 ms!
+2023-05-11 11:32:04,730 - INFO - 2145 - course_evaluation.py - evaluation - 41 - Finish - task_id:,error_code:0,error_message:success
